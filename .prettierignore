@@ -1,0 +1,18 @@
+*.md
+*.html
+*.csv
+*.png
+*.gif
+*.log
+*.nix
+*.csv
+*.txt
+*.yml
+*.sh
+*.snap
+build
+node_modules
+package.json
+
+# in addWebpackAlias of config-overrides.js we need to keep keys as string e.g "pages", it will not work if prettier format to "pages" to page
+config-overrides.js

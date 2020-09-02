@@ -1,0 +1,48 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Jest Current File",
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/react-app-rewired",
+      "args": [
+        "test",
+        "--env",
+        "jest-environment-jsdom-sixteen",
+        "--runInBand",
+        "${file}"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "protocol": "inspector",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      "url": "http://localhost:3001",
+      "webRoot": "${workspaceFolder}"
+    },
+    // To run acttach mode
+    // - close all Chrome, check monitor to make sure no Chrome running in background
+    // - For mac run this in terminal to lauch Chrome in remote debug mode: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
+    // - For other OS: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome
+    // - When there is a Chrome lauched, selecti Attach Chrome against localhost in the list of Run option then click Run
+    // - Go back to Chrome and enter url
+    {
+      "type": "chrome",
+      "request": "attach",
+      "port": 9222,
+      "name": "Attach Chrome against localhost",
+      "url": "http://cx.localhost.com:3001",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}
