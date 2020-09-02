@@ -5,7 +5,7 @@ An simple skeleton to use hooks, typescript in a reactjs app
   1. Run `yarn install`
   2. Run `yarn start`
   
-## features
+## Features
 - [x] Add package into package.json and use react-app-rewire to initialize project folder
 - [x] Set eslint, prettier, typescript, pre-commit hooks to achieve better code style and avoid errors
 - [x] Create a home page called `App.tsx` and add page layout
@@ -18,7 +18,7 @@ An simple skeleton to use hooks, typescript in a reactjs app
 - [x] Add unit tests for `Login` page using react-testing-library
 
 
-## todo
+## Todo
 - [ ] Add ErrorPage.tsx and Loading.tsx
 - [ ] Add BasicLayout.tsx to the page
 - [ ] Login.less: prevent break encapsulation
