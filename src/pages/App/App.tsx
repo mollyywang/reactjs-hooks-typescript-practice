@@ -1,7 +1,10 @@
 import { useRoutes } from "hookrouter"
 import React from "react"
 
+import routes from "@/routes"
 
 export const App = () => {
-  return <h1> reactjs-hooks-typescript-practice </h1>
+  // TODO Add ErrorPage.tsx return routeResult || <NotFoundPage />
+  const routesResult = useRoutes(routes)
+  return <div>{routesResult}</div>
 }
